@@ -1,0 +1,11 @@
+---
+- name: create user
+  hosts: all
+  
+  tasks:
+  
+  - name: create new user on server
+    user:
+      name: testuser1
+      state: present
+      groups: wheel
